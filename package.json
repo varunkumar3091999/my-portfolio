@@ -1,11 +1,37 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "varunkumar portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "node-sass sass/main.scss css/style.css --watch",
+    "devserver": "live-server --watch",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass  prefix:css compress:css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varunkumar3091999/my-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/varunkumar3091999/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/varunkumar3091999/my-portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "compress": "^0.99.0",
+    "concat": "^1.0.3",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
