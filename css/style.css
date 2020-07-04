@@ -19,45 +19,50 @@ body {
   font-family: "Kanit", sans-serif;
   font-weight: 900;
   line-height: 1.6;
-  margin: 2rem;
+  display: flex;
+  justify-content: center; }
+
+.container {
+  margin: 2rem auto;
   min-height: 100vh;
+  max-width: 99rem;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(11, 9rem);
   grid-template-rows: repeat(19, 10rem); }
 
-.home {
-  grid-column: 1 / -1;
+.home__avatar {
+  background-image: linear-gradient(218.27deg, rgba(230, 206, 145, 0.21) 1.5%, rgba(248, 145, 145, 0.33) 101.28%), url("../images/me.jpg");
+  background-size: cover;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 5; }
+  .home__avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.home__content {
+  background-image: linear-gradient(40.25deg, #6C5A8E 21.85%, #E48182 94.06%);
+  text-align: left;
+  padding: 7.5rem 10rem;
+  color: #eee;
+  grid-column: 4 / -1;
   grid-row: 1 / span 5;
-  display: flex;
   position: relative; }
-  .home__avatar {
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 5; }
-    .home__avatar img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .home__content {
-    background-image: linear-gradient(40.25deg, #6C5A8E 21.85%, #E48182 94.06%);
-    text-align: left;
-    padding: 7.5rem 10rem;
-    color: #eee;
-    grid-column: 4 / -1;
-    grid-row: 1 / span 5;
-    position: relative; }
-    .home__content--h1::after {
-      content: "";
-      width: 30rem;
-      height: 1px;
-      background-color: #eee;
-      position: absolute;
-      top: 27%;
-      left: 15%; }
-  .home__description {
-    font-weight: 100;
-    font-size: 2rem;
-    margin-left: 1rem; }
+  .home__content--h1::after {
+    content: "";
+    width: 30rem;
+    height: 1px;
+    background-color: #eee;
+    position: absolute;
+    top: 27%;
+    left: 15%; }
+
+.home__description {
+  font-weight: 100;
+  font-size: 2rem;
+  margin-left: 1rem; }
 
 .skills__content {
   z-index: 10;
@@ -65,14 +70,32 @@ body {
   padding: 3rem;
   text-align: left;
   grid-column: 1 / span 8;
-  grid-row: 6 / span 6; }
+  grid-row: 6 / span 6;
+  color: #eee; }
   .skills__content--list {
-    columns: 2;
     margin-top: 2rem;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 100;
     font-family: Kanit; }
+    .skills__content--list h3 {
+      font-weight: 500;
+      font-size: 2.5rem;
+      width: 20rem;
+      border-bottom: 1px solid; }
+  .skills__content--text {
+    margin-top: 1rem;
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: .1rem; }
+  .skills__content--list3 {
+    position: relative;
+    right: -50%;
+    top: -50%; }
+  .skills__content--list4 {
+    position: relative;
+    right: -50%;
+    top: -50%; }
 
 .skills__img {
   grid-column: 9 / span 3;
@@ -89,8 +112,9 @@ body {
   grid-column: 1 / -1;
   grid-row: 12 / span 5;
   display: grid;
-  grid-template-columns: repeat(11, 9rem);
-  grid-template-rows: repeat(5, 10rem); }
+  grid-template-columns: repeat(11, minmax(9rem, 1fr));
+  grid-template-rows: repeat(5, minmax(10rem, 1fr));
+  color: #eee; }
   .projects__content {
     padding: 3rem 5rem;
     grid-column: 1 / span 4;
@@ -108,7 +132,7 @@ body {
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    grid-template-rows: repeat(8, minmax(5vw, 1fr));
     grid-gap: 1rem;
     grid-column: 5 / -1;
     grid-row: 1 / span 5; }
@@ -120,16 +144,16 @@ body {
       grid-row: 1 / span 4; }
     .projects__project--03 {
       grid-column: 1 / span 4;
-      grid-row: 4 / span 2; }
+      grid-row: 4 / span 3; }
     .projects__project--04 {
       grid-column: 1 / span 4;
-      grid-row: 6 / span 3; }
+      grid-row: 7 / -1; }
     .projects__project--05 {
-      grid-column: 5 / span 2;
-      grid-row: 5 / -1; }
+      grid-column: 5 / span 5;
+      grid-row: 5 / span 2; }
     .projects__project--06 {
-      grid-column: 7 / span 3;
-      grid-row: 5 / -1; }
+      grid-column: 5 / span 5;
+      grid-row: 7 / -1; }
     .projects__project > * {
       background-color: #eee; }
 
@@ -138,8 +162,8 @@ body {
   background-image: linear-gradient(235.33deg, #954E49 2.94%, rgba(63, 64, 75, 0.9) 98.32%);
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(11, 9rem);
-  grid-template-rows: repeat(3, 10rem); }
+  grid-template-columns: repeat(11, minmax(9rem, 1fr));
+  grid-template-rows: repeat(3, minmax(10rem, 1fr)); }
   .contact__content {
     grid-column: 1 / span 4;
     grid-row: 1 / -1;
