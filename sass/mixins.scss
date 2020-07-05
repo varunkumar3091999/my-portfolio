@@ -1,0 +1,13 @@
+@mixin project-style {
+	background-color: #eee;
+	z-index: 30;
+	cursor: pointer;
+	transition: all .2s;
+	text-align: center;
+
+
+	&:hover {
+		background-color: transparent;
+		color: transparent;
+	}
+}

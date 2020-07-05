@@ -149,6 +149,8 @@
 
 	color:#eee;
 
+	// z-index: 10;
+
 
 	&__content {
 		// width: 40rem;
@@ -176,6 +178,8 @@
 	&__project {
 		padding: 1rem; 
 
+		color: black;
+
 		display: grid;
 		grid-template-columns: repeat(8, 1fr);
 		grid-template-rows: repeat(8, minmax(5vw, 1fr));
@@ -183,11 +187,27 @@
 
 		grid-column: 5 / -1;
 		grid-row: 1 / span 5;
+
+
+		&--card {
+				background-color: #eee;
+				z-index: 30;
+				cursor: pointer;
+				transition: all .2s;
+				text-align: center;
+
+
+			&:hover {
+				display: none;
+			}
+		}
 		
 
 		&--01 {
 			grid-column: 1 / span 4;
 			grid-row: 1 / span 3;
+
+
 		}
 
 		&--02 {
@@ -216,10 +236,71 @@
 		}
 
 
+		&--detail {
+			padding: 2em;
 
-		&>* {
-			background-color: #eee;
+			h2 {
+				font-weight: 300;
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1.5rem;
+				font-weight: 100;
+			}
+
+			a {
+				font-size: 2rem;
+				font-weight: 100;
+				border: none;
+				padding: 1rem;
+				border-radius: 2px;
+				text-decoration: none;
+				color: #eee;
+
+					&:hover {
+						transform: translateY(-3rem);
+					}
+			}
+
 		}
+
+
+		
+
+		&--portal {
+			grid-column: 1 / span 4;
+			grid-row: 1 / span 3;
+
+			// z-index: 1;
+		}
+
+		&--css {
+			grid-column: 5 / span 5;
+			grid-row: 1 / span 4;
+		}
+
+		&--weather {
+			grid-column: 1 / span 4;
+			grid-row: 4 / span 3;
+		}
+
+		&--chat {
+			grid-column: 1 / span 4;
+			grid-row: 7 / -1;
+		}
+
+		&--stock {
+			grid-column: 5 / span 5;
+			grid-row: 5 / span 2;
+		}
+
+		&--north {
+			grid-column: 5 / span 5;
+			grid-row:  7 / -1;
+		}
+
+
 
 	}
 }
