@@ -5,8 +5,11 @@
 }
 
 
-
-
+$bp-largest: 75em;  //1200px / 16
+$bp-large: 62.5em;  //1000px
+$bp-big: 56.25em;   //900px
+$bp-small: 50em;    //800px
+$bp-smaller: 43.75em;
 
 * {
 	margin: 0;
@@ -24,7 +27,17 @@ html {
 	box-sizing: border-box;
 	font-size: 62.5%;  //1rem = 10px
 
-	overflow-x: hidden;
+	overflow-x: hidden;	
+
+	@media only screen and (max-width: $bp-big) {
+			font-size: 50%;
+	}
+
+	@media only screen and (max-width: $bp-smaller) {
+			font-size: 40%;
+	}
+
+
 }
 
 body {
@@ -32,23 +45,23 @@ body {
 	font-weight: 900;
 	line-height: 1.6;
 
-	display: flex;
-	justify-content: center;
+	// display: flex;
+	// justify-content: center;
 }
 
 .container {
-	margin: 2rem auto;
-	// margin-right: -3rem;
-
+	margin: 2rem 2rem;
 	min-height: 100vh;
-	max-width: 99rem;
 
-	width: 100vw;
+
+	// width: 100vw;
 
 	display: grid;
 
-	grid-template-columns: repeat(11, 9rem);
+	grid-template-columns: repeat(10, 9.6vw);
 	grid-template-rows: repeat(19, 10rem);
+
+
 
 	
 }
