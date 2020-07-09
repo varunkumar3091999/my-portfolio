@@ -1,0 +1,80 @@
+.contact {
+
+
+	background-color: orangered;
+
+		grid-column: col-start 1 / col-end 8;
+
+		background-image: linear-gradient(235.33deg, #954E49 2.94%, rgba(63, 64, 75, 0.9) 98.32%);
+
+		
+
+		display: grid;
+
+		grid-template-columns: repeat(11, minmax(9rem, 1fr));
+		grid-template-rows: repeat(3, minmax(10rem, 1fr));
+
+
+	&__content {
+		grid-column: 1 / span 4;
+		grid-row: 1 / span 3;
+
+		margin: 2rem 0;
+
+
+
+
+
+		&--h1 {
+			color: #eee;
+			font-size: 4rem;
+
+			margin: 10rem auto;
+
+			transform: translateX(4rem)
+		}
+
+		border-right: 1px solid #eee;
+
+}
+	&__links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		grid-column: 5 / -1;
+		grid-row: 1 / -1;
+
+		@media only screen and (max-width: $bp-big){
+			flex-direction: column;
+
+			grid-column: 7 / 9;
+			justify-content: space-around;
+		}
+
+		&--item{
+			text-decoration: none;
+			text-align: center;
+			color: #eee;
+			
+
+			font-size: 3rem;
+			font-weight: 100;
+			transition: all .2s;
+			padding: 0 1rem;
+
+
+
+			&:hover {
+				transform: scale(1);
+				box-shadow: 0 2.5rem 2rem rgba(black, .2);
+			}
+		}
+
+			&:hover &--item:not(:hover) {
+				transform: scale(.9);
+			}
+	}
+
+
+}

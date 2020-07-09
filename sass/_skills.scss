@@ -1,0 +1,87 @@
+.skills {
+
+	grid-column: col-start 1 / col-end 8;
+
+
+	display: grid;
+	grid-template-columns: repeat(8, [skill-col-start] 1fr[skill-col-end]);
+	grid-template-rows: repeat(8, 12.5vh);
+
+	&__content {
+
+		grid-column: skill-col-start 1 / skill-col-end 5;
+		grid-row: 1 / -1;
+
+		z-index: 10;
+
+        background-image: linear-gradient(233.88deg, #D2BA7C 1.58%, rgba(228, 57, 57, 0.78) 97.99%);		padding: 3rem;
+		text-align: left;
+		color: #eee;
+
+		@media only screen and (max-width: $bp-large) {
+			grid-column: 1 / -1;
+		}
+		
+
+
+		&--list {
+			margin-top: 2rem;
+			list-style: none;
+			font-size: 1.8rem;
+			font-weight: 100;
+			font-family: Kanit;
+
+
+			h3 {
+				font-weight: 500;
+				font-size: 2.5rem;
+				width: 20rem;
+
+				border-bottom: 1px solid;
+			}
+
+		}
+
+
+		&--text {
+			margin-top: 1rem;
+			// font-family: Kanit;
+			font-weight: 100;
+			font-size: 2rem;
+			letter-spacing: .1rem;
+		}
+
+
+		&--list3 {
+			position: relative;
+			left: 50%;
+			top: -62%;
+		}
+
+		&--list4 {
+			position: relative;
+			left: 50%;
+			top: -59%;
+		}
+
+		
+	}
+
+	&__img {
+
+		grid-column: skill-col-start 6 / skill-col-end 8;
+		grid-row: 1 / -1;
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@media only screen and (max-width: $bp-large) {
+			display: none;
+		}
+	}
+
+
+}

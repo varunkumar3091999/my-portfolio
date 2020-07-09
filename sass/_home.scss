@@ -1,0 +1,46 @@
+.home {
+
+
+	&__avatar {	
+
+		background-image:  linear-gradient(218.27deg, rgba(230, 206, 145, 0.21) 1.5%, rgba(248, 145, 145, 0.33) 101.28%), url("../images/me.jpg");
+	
+		background-size: cover;
+
+		grid-column: col-start 1 / col-end 3;
+
+
+		img {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+	}
+
+
+	&__content{
+		background-image: linear-gradient(40.25deg, #6C5A8E 21.85%, #E48182 94.06%);
+		
+		text-align: left;	
+		padding: 7.5rem 10rem;
+		color: #eee;
+
+		grid-column: col-start 4 / col-end 8;
+
+		position: relative;
+
+		&--h1 {
+			
+			border-bottom: 1px solid #eee;
+		}
+	}
+
+	&__description {
+		font-weight: 100;
+		font-size: 2rem;
+		margin-left: 1rem;
+	}
+	
+}
