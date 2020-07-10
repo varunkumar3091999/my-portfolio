@@ -28,13 +28,13 @@ html {
 	font-size: 62.5%;  //1rem = 10px
 
 
-	@media only screen and (max-width: $bp-big) {
-			font-size: 50%;
+	@media only screen and (max-width: $bp-small) {
+			overflow-x: hidden;
 	}
 
-	@media only screen and (max-width: $bp-smaller) {
-			font-size: 40%;
-	}
+	// @media only screen and (max-width: $bp-smaller) {
+	// 		font-size: 40%;
+	// }
 
 
 }
@@ -49,7 +49,7 @@ body {
 
 	display: grid;
 
-	grid-template-rows: 100vh 100vh 100vh 50vh;
+	grid-template-rows: minmax(min-content, auto) minmax(min-content, 100vh) minmax(min-content, 100vh) minmax(min-content, 50vh);
 	grid-template-columns:repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) ;
 
 	margin: 2rem 2rem;
