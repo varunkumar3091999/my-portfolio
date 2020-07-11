@@ -35,6 +35,10 @@
 			@media only screen and (max-width: $bp-large){
 				width: 80%;
 			}	
+
+			@media only screen and (max-width: $bp-small){
+				font-size: 3.5rem;
+			}
 		}
 
 		&--text {
@@ -43,6 +47,10 @@
 			font-size: 2rem;
 			letter-spacing: .5rem;
 			margin-top: 2rem !important;
+
+			@media only screen and (max-width: $bp-small){
+				font-size: 3rem;
+			}
 		}
 
 		@media only screen and (max-width: $bp-small){
@@ -82,10 +90,16 @@
 
 		
 		@media only screen and (max-width: $bp-small){
-			grid-template-columns: repeat(12, 1fr);
+			
 
-			grid-column: 1 / -1;
-			grid-row: 2 / span 3;
+			grid-column: 1 / 9;
+			grid-row: 3 / span 3;
+			padding-right: 3rem;
+
+			vertical-align: center;
+			grid-gap: 1.5rem;
+
+
 		}
 
 		
@@ -99,10 +113,10 @@
 				text-overflow: hidden;
 			}
 
-			@media only screen and (max-width: $bp-small){
-				border-bottom: 1px solid black;
-				border-right: 1px solid black;
-			}
+			// @media only screen and (max-width: $bp-small){
+			// 	border-bottom: 1px solid black;
+			// 	border-right: 1px solid black;
+			// }
 			
 			
 			h2 {
@@ -163,19 +177,27 @@
 			grid-column: 1 / span 4;
 			grid-row: 1 / span 3;
 
-			// z-index: 1;
+			@media only screen and (max-width: $bp-small) {
+				grid-column: 2 / span 4;
+			}
 		}
 
 		&--css {
 			grid-column: 5 / span 5;
 			grid-row: 1 / span 4;
+
+			@media only screen and (max-width: $bp-small) {
+				grid-column: 6 / span 4;
+			}
 		}
 
 		&--weather {
 			grid-column: 1 / span 4;
 			grid-row: 4 / span 3;
 			
-			
+			@media only screen and (max-width: $bp-small) {
+				grid-column: 2 / span 4;
+			}
 
 		}
 
@@ -190,11 +212,19 @@
 				@media only screen and (max-width: $bp-large){
 					grid-row: 7 / 9;
 				}
+
+				@media only screen and (max-width: $bp-small) {
+					grid-column: 2 / span 4;
+				}
 		}
 
 		&--stock {
 			grid-column: 5 / span 5;
 			grid-row: 5 / span 2;
+
+			@media only screen and (max-width: $bp-small) {
+				grid-column: 6 / span 4;
+			}
 		}
 
 		&--portal {
@@ -204,6 +234,10 @@
 			@media only screen and (max-width: $bp-largest){
 				grid-row: 7 / 9;
 			}
+
+			@media only screen and (max-width: $bp-small) {
+				grid-column: 6 / span 4;
+			}	
 		}
 
 

@@ -17,6 +17,10 @@
 
 		width: 100vw;
 
+		@media only screen and (max-width: $bp-small) {
+				// height: 20vh;
+		}
+
 
 	&__content {
 		grid-column: 1 / span 4;
@@ -39,11 +43,16 @@
 
 		border-right: 1px solid #eee;
 
+		@media only screen and (max-width: $bp-small) {
+				display: none;
+		}
+
 }
 	&__links {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		height: auto;
 
 		grid-column: 5 / -1;
 		grid-row: 1 / -1;
@@ -56,7 +65,8 @@
 		}
 
 		@media only screen and (max-width: $bp-small) {
-			grid-column: 6 / 9;
+			grid-column: 1 / 9;
+			flex-direction: row;
 		}
 
 		&--item{
