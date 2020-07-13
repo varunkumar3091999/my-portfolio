@@ -9,7 +9,10 @@ $bp-largest: 75em;  //1200px / 16
 $bp-large: 62.5em;  //1000px
 $bp-big: 56.25em;   //900px
 $bp-small: 50em;    //800px
-$bp-smaller: 43.75em;
+$bp-smaller: 43.75em; //700px
+
+$bp-mobile-largest: 28.1875em;  //450px
+
 
 * {
 	margin: 0;
@@ -49,7 +52,7 @@ body {
 
 	display: grid;
 
-	grid-template-rows: minmax(min-content, auto) minmax(min-content, 100vh) minmax(min-content, 100vh) minmax(min-content, 50vh);
+	grid-template-rows: minmax(max-content, auto) minmax(max-content, 100vh) minmax(min-content, 100vh) minmax(min-content, 50vh);
 	grid-template-columns:repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) ;
 
 	margin: 2rem 2rem;

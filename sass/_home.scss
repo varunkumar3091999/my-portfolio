@@ -36,7 +36,7 @@
 			max-height: 100%;
 
 
-			@media only screen  and (max-width: $bp-small){
+			@media only screen and (max-width: $bp-small){
 				
 
 				display: block;
@@ -50,6 +50,24 @@
 
 				grid-column: 6 / span 7;
 				grid-row: 2 / span 4;
+
+				transform: rotate(-7.5deg);
+
+				box-shadow: 0 2.5rem 2rem rgba(black, .2);
+			}
+
+			@media only screen and (max-width: $bp-mobile-largest) {
+				display: block;
+				width: 100vw;
+				height: 60vh;
+				object-fit: cover;
+				// position: static;
+
+				max-width: 100%;
+				max-height: 100%;
+
+				grid-column: 4 / span 4;
+				grid-row: 1/ span 4;
 
 				transform: rotate(-7.5deg);
 
@@ -75,6 +93,10 @@
 		&--h1 {
 			
 			border-bottom: 1px solid #eee;
+
+			@media only screen and (max-width: $bp-mobile-largest){
+				font-size: 3rem;
+			}
 		}
 
 		&--text {
@@ -82,6 +104,13 @@
 				margin-top: 1rem;
 				width: 75%;	
 				font-size: 3rem;
+
+			}
+
+			@media only screen  and (max-width: $bp-large) {
+				margin-top: 1rem !important;
+				width: 90% !important;	
+				font-size: 3rem !important;
 
 			}
 		}
