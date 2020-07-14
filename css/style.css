@@ -338,7 +338,7 @@ body {
             border: none; } }
         @media only screen and (max-width: 28.1875em) {
           .projects__project--detail h2 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             width: 100%; } }
         .projects__project--detail h2 a {
           z-index: 10; }
@@ -350,7 +350,7 @@ body {
         line-height: 2.5rem; }
         @media only screen and (max-width: 28.1875em) {
           .projects__project--detail p {
-            font-size: .75rem;
+            font-size: 1rem;
             line-height: 2rem;
             font-weight: 300;
             width: 100%; } }
