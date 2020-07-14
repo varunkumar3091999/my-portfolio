@@ -56,7 +56,9 @@
 	&__links {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
+
+
 		height: auto;
 
 		grid-column: 5 / -1;
