@@ -531,7 +531,7 @@ body {
   .contact__links {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: auto;
     grid-column: 5 / -1;
     grid-row: 1 / -1; }
