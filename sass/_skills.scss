@@ -7,6 +7,10 @@
 	grid-template-columns: repeat(8, [skill-col-start] 1fr[skill-col-end]);
 	grid-template-rows: repeat(8, 12.5vh);
 
+	// @media only screen and (max-width: $bp-mobile-large){
+	// 	grid-template-rows: repeat(6, 12.5vh);
+	// }
+
 	&__content {
 
 		grid-column: skill-col-start 1 / skill-col-end 5;
@@ -60,6 +64,10 @@
 					font-size: 2.4rem;
 					width: 50%;
 				}
+
+				@media only screen and (max-width: $bp-mobile-large){
+					font-size: 2rem;
+				}
 			}
 
 		}
@@ -74,6 +82,10 @@
 
 			@media only screen and (max-width: $bp-mobile-largest){
 				font-size: 3rem;
+			}
+
+			@media only screen and (max-width: $bp-mobile-large) {
+				font-size: 2rem;
 			}
 		}
 
@@ -98,6 +110,10 @@
 			@media only screen and (max-width: $bp-mobile-largest){
 				font-size: 2rem;
 			}
+
+			@media only screen and (max-width: $bp-mobile-large){
+				font-size: 1.5rem;
+			}
 		}
 
 		&--list1 {
@@ -112,6 +128,10 @@
 				font-size: 1.75rem;
 				font-weight: 300;
 			}
+
+			@media only screen and (max-width: $bp-mobile-large){
+				font-size: 1.5rem;
+			}
 		}
 
 		&--list2 {
@@ -125,6 +145,9 @@
 			@media only screen and (max-width: $bp-mobile-largest){
 				font-size: 1.75rem;
 				font-weight: 300;
+			}
+			@media only screen and (max-width: $bp-mobile-large){
+				font-size: 1.5rem;
 			}
 		}
 
@@ -141,6 +164,10 @@
 				font-size: 1.75rem;
 				font-weight: 300;
 			}
+
+			@media only screen and (max-width: $bp-mobile-large){
+				font-size: 1.5rem;
+			}
 		}
 
 
@@ -155,6 +182,10 @@
 			@media only screen and (max-width: $bp-mobile-largest){
 				font-size: 1.75rem;
 				font-weight: 300;
+			}
+
+			@media only screen and (max-width: $bp-mobile-large){
+				font-size: 1.5rem;
 			}
 		}
 
