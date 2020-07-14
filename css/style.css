@@ -13,8 +13,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
-  overflow-x: hidden; }
+  font-size: 62.5%; }
   @media only screen and (max-width: 50em) {
     html {
       overflow-x: hidden; } }
@@ -28,7 +27,8 @@ body {
   display: grid;
   grid-template-rows: minmax(max-content, auto) minmax(max-content, 100vh) minmax(min-content, 100vh) minmax(max-content, 50vh);
   grid-template-columns: repeat(8, [col-start] minmax(min-content, 14rem) [col-end]);
-  margin: 2rem 2rem; }
+  margin: 2rem 2rem;
+  overflow-x: hidden; }
 
 .h1 {
   font-weight: 100;

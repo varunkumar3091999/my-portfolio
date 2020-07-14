@@ -31,7 +31,7 @@ html {
 	font-size: 62.5%;  //1rem = 10px
 
 
-	overflow-x: hidden;
+	
 
 	@media only screen and (max-width: $bp-small) {
 			overflow-x: hidden;
@@ -58,4 +58,6 @@ body {
 	grid-template-columns:repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) ;
 
 	margin: 2rem 2rem;
+
+	overflow-x: hidden;
 }
