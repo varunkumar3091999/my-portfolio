@@ -12,7 +12,7 @@ $bp-small: 50em;    //800px
 $bp-smaller: 43.75em; //700px
 
 $bp-mobile-largest: 28.1875em;  //450px
-$bp-mobile-large: 23.5em;  //350px
+$bp-mobile-large: 23.5em;  //375px
 
 * {
 	margin: 0;
@@ -55,7 +55,7 @@ body {
 
 	display: grid;
 
-	grid-template-rows: minmax(min-content, 100vh) minmax(max-content, 100vh) minmax(min-content, 100vh) minmax(max-content, 50vh);
+	grid-template-rows: minmax(min-content, 100vh) minmax(max-content, 100vh) minmax(min-content, 100vh) min-content;
 	grid-template-columns:repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) ;
 
 	margin: 2rem;

@@ -250,7 +250,10 @@
 				transform: scale(.9);
 			}
 
-			@media only screen and (max-width: $bp-mobile-largest){
+			@media only screen and (max-width: $bp-small){
+				
+				box-shadow: 0 2.5rem 2rem rgba(black, .2);
+
 				&:hover &--detail:not(:hover) {
 					transform: none
 				}
