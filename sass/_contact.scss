@@ -19,7 +19,7 @@
 		width: 100vw;
 
 		@media only screen and (max-width: $bp-small) {
-				// height: 20vh;
+				height: 40vh;
 		}
 
 		@media only screen and (max-width: $bp-mobile-largest){
@@ -76,6 +76,11 @@
 		@media only screen and (max-width: $bp-small) {
 			grid-column: 1 / 9;
 			flex-direction: row;
+			// align-content: flex-start;
+
+			// height: 20rem;
+
+
 		}
 
 		@media only screen and (max-width: $bp-mobile-largest){

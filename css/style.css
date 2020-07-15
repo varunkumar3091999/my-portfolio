@@ -300,7 +300,8 @@ body {
           width: 50%; } }
       @media only screen and (max-width: 23.5em) {
         .projects__content--h1 {
-          font-size: 2rem; } }
+          font-size: 2rem;
+          width: 40%; } }
     .projects__content--text {
       font-family: Kanit;
       font-weight: 100;
@@ -514,6 +515,9 @@ body {
   grid-template-columns: repeat(11, minmax(9rem, 1fr));
   grid-template-rows: repeat(3, minmax(min-content, 1fr));
   width: 100vw; }
+  @media only screen and (max-width: 50em) {
+    .contact {
+      height: 40vh; } }
   @media only screen and (max-width: 28.1875em) {
     .contact {
       width: 100vw;
