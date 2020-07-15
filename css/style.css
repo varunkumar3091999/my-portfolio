@@ -664,6 +664,10 @@ body {
       .contact__links {
         width: 100vw;
         justify-content: space-around; } }
+    @media only screen and (max-width: 46.9375em) {
+      .contact__links {
+        grid-column: 2 / span 5;
+        justify-content: space-between; } }
     .contact__links--item {
       text-decoration: none;
       text-align: center;
@@ -679,6 +683,9 @@ body {
         .contact__links--item {
           font-size: 2rem;
           padding: 0; } }
+      @media only screen and (max-width: 46.9375em) {
+        .contact__links--item {
+          font-size: 2rem; } }
       .contact__links--item:hover {
         transform: scale(1);
         box-shadow: 0 2.5rem 2rem rgba(0, 0, 0, 0.2); }
