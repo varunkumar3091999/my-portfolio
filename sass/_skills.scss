@@ -22,17 +22,19 @@
 		text-align: left;
 		color: #eee;
 
+		display: grid;
+			grid-template-columns: repeat(6, minmax(min-content, 20vh));
+			grid-template-rows: repeat(13, minmax(min-content, 5vw));
+
 		@media only screen and (max-width: $bp-small) {
 			grid-column: 1 / -1;
 			width: 100vw;
 		}
+
+		@media only screen and (max-width: $bp-landscape-mobile-large) {
+			width: 100vw;
+		}
 		
-
-			display: grid;
-			grid-template-columns: repeat(6, minmax(min-content, 20vh));
-			grid-template-rows: repeat(13, minmax(min-content, 5vw));
-
-
 
 		&--list {
 			margin-top: 4rem;
@@ -68,6 +70,11 @@
 				@media only screen and (max-width: $bp-mobile-large){
 					font-size: 2rem;
 				}
+
+				@media only screen and (max-width: $bp-landscape-mobile-large) {
+					font-size: 2rem;
+					width: 10rem;
+				}
 			}
 
 		}
@@ -88,6 +95,13 @@
 				font-size: 2.5rem;
 				font-weight: 600;
 			}
+
+			@media only screen and (max-width: $bp-landscape-mobile-large) {
+				font-size: 2rem;
+				font-weight: 600;
+			}
+
+			
 		}
 
 
@@ -115,6 +129,10 @@
 			@media only screen and (max-width: $bp-mobile-large){
 				font-size: 1.5rem;
 			}
+
+			@media only screen and (max-width: $bp-landscape-mobile-large) {
+				font-size: 2rem;
+			}
 		}
 
 		&--list1 {
@@ -133,6 +151,14 @@
 			@media only screen and (max-width: $bp-mobile-large){
 				font-size: 1.5rem;
 			}
+
+			@media only screen and (max-width: $bp-landscape-mobile-large) {
+				font-size: 2rem;
+				grid-column: 1 / span 2;
+				grid-row: 5 / span 3;
+				margin-top: 2rem;
+
+			}
 		}
 
 		&--list2 {
@@ -141,6 +167,10 @@
 
 			@media only screen and (max-width: $bp-small){
 				font-size: 3rem;
+				grid-column: 3 / span 2;
+				grid-row: 5 / span 3;
+				margin-top: 2rem;
+
 			}
 
 			@media only screen and (max-width: $bp-mobile-largest){
@@ -149,6 +179,10 @@
 			}
 			@media only screen and (max-width: $bp-mobile-large){
 				font-size: 1.5rem;
+			}
+
+			@media only screen and (max-width: $bp-landscape-mobile-large) {
+				font-size: 2rem;
 			}
 		}
 
@@ -169,6 +203,14 @@
 			@media only screen and (max-width: $bp-mobile-large){
 				font-size: 1.5rem;
 			}
+
+			@media only screen and (max-width: $bp-landscape-mobile-large) {
+				font-size: 2rem;
+				grid-column: 5 / span 2;
+				grid-row: 5 / span 3;
+				margin-top: 2rem;
+
+			}
 		}
 
 
@@ -187,6 +229,14 @@
 
 			@media only screen and (max-width: $bp-mobile-large){
 				font-size: 1.5rem;
+			}
+			@media only screen and (max-width: $bp-landscape-mobile-large) {
+				font-size: 2rem;
+				grid-column: 7 / span 2;
+				grid-row: 5 / span 3;
+				margin-top: 2rem;
+				margin-right: 3rem;
+
 			}
 		}
 

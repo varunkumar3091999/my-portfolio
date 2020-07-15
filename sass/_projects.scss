@@ -24,6 +24,10 @@
 		grid-template-rows: min-content;
 	}
 
+	@media only screen and (max-width: $bp-landscape-mobile-large) {
+		grid-template-rows: repeat(3, min-content)
+	}
+
 
 
 	
@@ -62,6 +66,12 @@
 				width: 40%;
 			}
 
+			@media only screen and (max-width: $bp-landscape-mobile-large){
+				font-size: 2rem;
+				width: 50%;
+				font-weight: 600;
+			}
+
 
 		}
 
@@ -83,6 +93,14 @@
 
 			@media only screen and (max-width: $bp-mobile-large) {
 				font-size: 1.5rem;
+			}
+
+			@media only screen and (max-width: $bp-landscape-mobile-large){
+				font-size: 2rem;
+			}
+
+			@media only screen and (max-width: $bp-landscape-mobile-small) {
+				width: 92.5%;
 			}
 		}
 
@@ -134,17 +152,19 @@
 
 		
 		@media only screen and (max-width: $bp-small){
-			
-
 			grid-column: 1 / 9;
 			grid-row: 3 / span 3;
 			padding-right: 3rem;
 
 			vertical-align: center;
 			grid-gap: 1.5rem;
-
-
 		}
+
+		@media only screen and (max-width: $bp-landscape-mobile-large){
+			grid-row: 2 / span 2;	
+		}
+
+		
 
 		
 
@@ -273,6 +293,11 @@
 				grid-column: 1 / span 1;
 				grid-row: 1 / span 1;
 			}
+
+			@media only screen and (max-width: $bp-landscape-mobile-small) {
+				grid-column: 1 / span 4;
+				margin-left: 2rem;
+			}
 		}
 
 		&--css {
@@ -288,7 +313,10 @@
 				grid-row: 1 / span 1;
 			}
 
-
+			@media only screen and (max-width: $bp-landscape-mobile-small) {
+				grid-column: 5 / span 4;
+				margin-left: 2rem;
+			}
 
 		}
 
@@ -303,6 +331,11 @@
 			@media only screen and (max-width: $bp-mobile-largest){
 				grid-column: 1 / span 1;
 				grid-row: 2 / span 1;
+			}
+
+			@media only screen and (max-width: $bp-landscape-mobile-small) {
+				grid-column: 1 / span 4;
+				margin-left: 2rem;
 			}
 
 		}
@@ -327,6 +360,10 @@
 					grid-column: 2 / span 1;
 					grid-row: 2 / span 1;
 				}
+				@media only screen and (max-width: $bp-landscape-mobile-small) {
+					grid-column: 1 / span 4;
+					margin-left: 2rem;
+				}
 		}
 
 		&--stock {
@@ -340,6 +377,11 @@
 			@media only screen and (max-width: $bp-mobile-largest){
 					grid-column: 1 / span 1;
 					grid-row: 3 / span 1;
+			}
+
+			@media only screen and (max-width: $bp-landscape-mobile-small) {
+				grid-column: 5 / span 4;
+				margin-left: 2rem;
 			}
 		}
 
@@ -358,6 +400,10 @@
 			@media only screen and (max-width: $bp-mobile-largest){
 					grid-column: 2 / span 1;
 					grid-row: 3 / span 1;
+			}
+			@media only screen and (max-width: $bp-landscape-mobile-small) {
+				grid-column: 5 / span 4;
+				margin-left: 2rem;
 			}
 		}
 

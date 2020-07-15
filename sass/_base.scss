@@ -14,6 +14,9 @@ $bp-smaller: 43.75em; //700px
 $bp-mobile-largest: 28.1875em;  //450px
 $bp-mobile-large: 23.5em;  //375px
 
+$bp-landscape-mobile-large: 46.9375em; //750px
+$bp-landscape-mobile-small: 42.25em;  //675px
+
 * {
 	margin: 0;
 	padding: 0;
@@ -65,4 +68,9 @@ body {
 	@media only screen and (max-width: $bp-mobile-largest){
 		margin: 0;
 	}
+
+
+	// @media only screen and (max-width: $bp-landscape-mobile-large) {
+	// 	grid-template-rows: minmax(min-content, 150vh) minmax(max-content, 150vh) minmax(min-content, 150vh) min-content;
+	// }	
 }
