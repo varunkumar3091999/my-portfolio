@@ -62,6 +62,11 @@
 					font-size: 4rem;
 				}
 
+				@media only screen and (max-width: $bp-landscape-mobile-large) {
+					font-size: 2rem;
+					width: 10rem;
+				}
+
 				@media only screen and (max-width: $bp-mobile-largest) {
 					font-size: 2.4rem;
 					width: 50%;
@@ -71,10 +76,7 @@
 					font-size: 2rem;
 				}
 
-				@media only screen and (max-width: $bp-landscape-mobile-large) {
-					font-size: 2rem;
-					width: 10rem;
-				}
+				
 			}
 
 		}
@@ -87,6 +89,12 @@
 				font-size: 4rem;
 			}
 
+			@media only screen and (max-width: $bp-landscape-mobile-large) {
+				font-size: 2rem;
+				font-weight: 600;
+			}
+
+
 			@media only screen and (max-width: $bp-mobile-largest){
 				font-size: 3rem;
 			}
@@ -96,11 +104,7 @@
 				font-weight: 600;
 			}
 
-			@media only screen and (max-width: $bp-landscape-mobile-large) {
-				font-size: 2rem;
-				font-weight: 600;
-			}
-
+			
 			
 		}
 
@@ -122,6 +126,10 @@
 				grid-row: 2 / span 3;
 			}
 
+			@media only screen and (max-width: $bp-landscape-mobile-large) {
+				font-size: 2rem;
+			}
+
 			@media only screen and (max-width: $bp-mobile-largest){
 				font-size: 2rem;
 			}
@@ -130,9 +138,7 @@
 				font-size: 1.5rem;
 			}
 
-			@media only screen and (max-width: $bp-landscape-mobile-large) {
-				font-size: 2rem;
-			}
+			
 		}
 
 		&--list1 {
@@ -143,15 +149,6 @@
 				font-size: 3rem;
 			}
 
-			@media only screen and (max-width: $bp-mobile-largest){
-				font-size: 1.75rem;
-				font-weight: 300;
-			}
-
-			@media only screen and (max-width: $bp-mobile-large){
-				font-size: 1.5rem;
-			}
-
 			@media only screen and (max-width: $bp-landscape-mobile-large) {
 				font-size: 2rem;
 				grid-column: 1 / span 2;
@@ -159,6 +156,23 @@
 				margin-top: 2rem;
 
 			}
+
+			@media only screen and (max-width: $bp-mobile-largest){
+				font-size: 1.75rem;
+				font-weight: 300;
+
+
+				grid-column: 1 / span 3;
+				grid-row: 5 / span 2;
+			}
+
+			
+
+			@media only screen and (max-width: $bp-mobile-large){
+				font-size: 1.5rem;
+			}
+
+			
 		}
 
 		&--list2 {
@@ -173,17 +187,23 @@
 
 			}
 
+			@media only screen and (max-width: $bp-landscape-mobile-large) {
+				font-size: 2rem;
+			}
+
 			@media only screen and (max-width: $bp-mobile-largest){
 				font-size: 1.75rem;
 				font-weight: 300;
+
+
+				grid-column: 5 / span 3;
+				grid-row: 5 / span 2;
 			}
 			@media only screen and (max-width: $bp-mobile-large){
 				font-size: 1.5rem;
 			}
 
-			@media only screen and (max-width: $bp-landscape-mobile-large) {
-				font-size: 2rem;
-			}
+			
 		}
 
 
@@ -195,15 +215,6 @@
 				font-size: 3rem;
 			}
 
-			@media only screen and (max-width: $bp-mobile-largest){
-				font-size: 1.75rem;
-				font-weight: 300;
-			}
-
-			@media only screen and (max-width: $bp-mobile-large){
-				font-size: 1.5rem;
-			}
-
 			@media only screen and (max-width: $bp-landscape-mobile-large) {
 				font-size: 2rem;
 				grid-column: 5 / span 2;
@@ -211,6 +222,22 @@
 				margin-top: 2rem;
 
 			}
+
+			@media only screen and (max-width: $bp-mobile-largest){
+				font-size: 1.75rem;
+				font-weight: 300;
+
+				grid-column: 1 / span 3;
+				grid-row: 7 / span 2;
+			}
+
+			
+
+			@media only screen and (max-width: $bp-mobile-large){
+				font-size: 1.5rem;
+			}
+
+			
 		}
 
 
@@ -222,14 +249,6 @@
 				font-size: 3rem;
 			}
 
-			@media only screen and (max-width: $bp-mobile-largest){
-				font-size: 1.75rem;
-				font-weight: 300;
-			}
-
-			@media only screen and (max-width: $bp-mobile-large){
-				font-size: 1.5rem;
-			}
 			@media only screen and (max-width: $bp-landscape-mobile-large) {
 				font-size: 2rem;
 				grid-column: 7 / span 2;
@@ -238,6 +257,19 @@
 				margin-right: 3rem;
 
 			}
+
+			@media only screen and (max-width: $bp-mobile-largest){
+				font-size: 1.75rem;
+				font-weight: 300;
+
+				grid-column: 5 / span 3;
+				grid-row: 7 / span 2;
+			}
+
+			@media only screen and (max-width: $bp-mobile-large){
+				font-size: 1.5rem;
+			}
+			
 		}
 
 		

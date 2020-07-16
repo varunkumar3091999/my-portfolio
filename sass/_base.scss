@@ -9,13 +9,14 @@ $bp-largest: 75em;  //1200px / 16
 $bp-large: 62.5em;  //1000px
 $bp-big: 56.25em;   //900px
 $bp-small: 50em;    //800px
-$bp-smaller: 43.75em; //700px
+
+$bp-landscape-mobile-large: 46.9375em; //750px
+$bp-landscape-mobile-small: 42.75em;  //675px
 
 $bp-mobile-largest: 28.1875em;  //450px
 $bp-mobile-large: 23.5em;  //375px
 
-$bp-landscape-mobile-large: 46.9375em; //750px
-$bp-landscape-mobile-small: 42.25em;  //675px
+
 
 * {
 	margin: 0;

@@ -3,7 +3,7 @@
 	background-image: linear-gradient(40.25deg, #6C5A8E 21.85%, #E48182 94.06%);
 	grid-column: col-start 1 / col-end 8;
 
-	@media only screen  and (max-width: 800px) {
+	@media only screen  and (max-width: $bp-small) {
 		grid-column: 1 / -1;
 	}
 
@@ -63,6 +63,12 @@
 				box-shadow: 0 2.5rem 2rem rgba(black, .2);
 			}
 
+
+			@media only screen and (max-width: $bp-landscape-mobile-large) {
+				grid-column: 2 / span 4;
+				grid-row: 2/ span 3;
+			}
+
 			@media only screen and (max-width: $bp-mobile-largest) {
 				// display: block;
 				// width: 100vw;
@@ -83,13 +89,10 @@
 
 			@media only screen and (max-width: $bp-mobile-large) {
 				grid-column: 4 / span 4;
-				grid-row: 2/ span 4;
+				grid-row: 1/ span 3;
 			}
 
-			@media only screen and (max-width: $bp-landscape-mobile-large) {
-				grid-column: 2 / span 4;
-				grid-row: 2/ span 3;
-			}
+			
 
 	}
 
@@ -107,10 +110,6 @@
 		// position: relative;
 		// background-color: blue;
 
-		@media only screen and (max-width: $bp-mobile-large){
-			grid-row: 6 / -1;
-		}
-
 		@media only screen  and (max-width: $bp-small) {
 			grid-row: 7 / span 1;
 			grid-column: 2 / span 4;
@@ -120,17 +119,26 @@
 			width: 100vw;
 		}
 
-
 		@media only screen and (max-width: $bp-landscape-mobile-large) {
-			grid-column: 7 / -1 !important;
-			grid-row: 2 / span 4 !important;
+			grid-column: 7 / -1 ;
+			grid-row: 2 / span 4 ;
 		}
 
+		@media only screen and (max-width: $bp-mobile-largest){
+			grid-column: 2 / -1;
+			grid-row: 5 / span 2;
+			width: 130%;
+		}
 
 		&--h1 {
 			
 			border-bottom: 1px solid #eee;
 			box-sizing: border-box;
+
+			@media only screen and (max-width: $bp-small) {
+				padding-right: 2rem;
+				width: 75%;
+			}
 
 			@media only screen and (max-width: $bp-mobile-largest){
 				font-size: 3rem;
@@ -140,10 +148,7 @@
 				font-size: 2.5rem;
 			}
 
-			@media only screen and (max-width: $bp-small) {
-				padding-right: 2rem;
-				width: 75%;
-			}
+			
 
 			@media only screen and (max-width: $bp-landscape-mobile-large){
 				font-size: 2.2rem ;
@@ -153,30 +158,31 @@
 		}
 
 		&--text {
+
+			@media only screen  and (max-width: $bp-large) {
+				margin-top: 1rem ;
+				width: 90%;	
+				font-size: 3rem;
+			}
+
 			@media only screen  and (max-width: $bp-small) {
 				margin-top: 1rem;
 				width: 75%;	
 				font-size: 3rem;
-
-			}
-
-			@media only screen  and (max-width: $bp-large) {
-				margin-top: 1rem !important;
-				width: 90% !important;	
-				font-size: 3rem !important;
-
-			}
-
-			@media only screen and (max-width: $bp-mobile-largest){
-				font-size: 2rem !important;
 			}
 
 			@media only screen and (max-width: $bp-landscape-mobile-large){
-				font-size: 2rem !important;
-				width: 50% !important;
+				font-size: 2rem ;
+				width: 50% ;
 				letter-spacing: 1px;
 				line-height: 4rem;
 			}
+
+			@media only screen and (max-width: $bp-mobile-largest){
+				font-size: 2rem;
+			}
+
+			
 		}
 
 		
